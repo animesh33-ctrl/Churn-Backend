@@ -13,7 +13,7 @@ public class MLService {
 
     public String callModel(MLInput input) {
         RestTemplate restTemplate = new RestTemplate();
-        String flaskUrl = "http://localhost:5000/predict";
+        String flaskUrl = "https://churn-flask-15gm.onrender.com";
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
